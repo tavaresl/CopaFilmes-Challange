@@ -20,7 +20,7 @@ namespace Domain
         {
             if (_competitors.Contains(movie))
             {
-                return;
+                throw new Exception(@"movie {movie.Title} is already a competitor");
             }
 
             _competitors.Add(movie);
@@ -32,11 +32,11 @@ namespace Domain
 
             while (currentRound.Count() > 1)
             {
-                var newRound = new List<Match>();
+                var newRound = new List<MovieMatch>();
 
                 for (var i = 0; i < currentRound.Count(); i += 2)
                 {
-                    newRound.Add(new Match(
+                    newRound.Add(new MovieMatch(
                         currentRound[i].Winner,
                         currentRound[i + 1].Winner
                     ));
@@ -49,14 +49,14 @@ namespace Domain
             RunnerUp = currentRound.First().Loser;
         }
 
-        private IList<Match> CreateFirstRound()
+        private IList<MovieMatch> CreateFirstRound()
         {
             var competitors = new LinkedList<Movie>(_competitors.OrderBy(movie => movie.Title));
-            var firstRound = new List<Match>();
+            var firstRound = new List<MovieMatch>();
 
             while (competitors.Any())
             {
-                firstRound.Add(new Match(
+                firstRound.Add(new MovieMatch(
                     competitors.First(),
                     competitors.Last()
                 ));

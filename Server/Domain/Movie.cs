@@ -23,7 +23,7 @@ namespace Domain
                 return this.Rating > otherMovie.Rating;
             }
 
-            return string.Compare(this.Title, otherMovie.Title) > 0;
+            return string.Compare(this.Title, otherMovie.Title) < 1;
         }
 
         public bool Equals(Movie otherMovie)
