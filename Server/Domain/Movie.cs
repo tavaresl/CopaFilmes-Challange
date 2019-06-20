@@ -25,5 +25,10 @@ namespace Domain
 
             return string.Compare(this.Title, otherMovie.Title) > 0;
         }
+
+        public bool Equals(Movie otherMovie)
+        {
+            return this.Id == otherMovie.Id;
+        }
     }
  }

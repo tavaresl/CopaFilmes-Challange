@@ -19,7 +19,6 @@ namespace API.Controllers
             _movieService = movieService;
         }
 
-        // GET api/values
         [HttpGet]
         public async Task<IEnumerable<Movie>> Get()
         {
