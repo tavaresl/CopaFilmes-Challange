@@ -1,0 +1,35 @@
+.modal {
+  top: 40px;
+  position: relative;
+  width: 90%;
+  height: auto;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 15px;
+  box-shadow: 0 4px 8px #999;
+}
+
+.modal__title {
+  margin: 0 0 20px;
+  font-size: 24px;
+  text-align: center;
+  color: #666;
+}
+
+.modal__close_button {
+  position: absolute;
+  color: #999;
+  font-family: monospace;
+  top: 15px;
+  right: 15px;
+  border: none;
+  background: none;
+  padding: none;
+  font-size: 20px;
+}
+
+@media (min-width: 945px) {
+  .modal {
+    width: 60%;
+  }
+}

@@ -1,0 +1,19 @@
+{
+    "extends": "airbnb",
+    "rules": {
+        "react/jsx-uses-react": 1,
+        "object-curly-newline": 0
+    },
+    "settings": {
+        "import/resolver": {
+            "node": {
+                "extensions": [".js", ".jsx", ".ts", ".tsx"]
+            }
+        }
+    },
+    "plugins": [
+        "react",
+        "jsx-a11y",
+        "import"
+    ]
+}
