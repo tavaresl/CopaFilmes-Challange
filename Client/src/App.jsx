@@ -5,7 +5,7 @@ import Movies from './components/containers/Movies/Movies';
 import MovieService from './services/MovieService';
 import ChampionshipService from './services/ChampionshipService';
 
-const baseURL = 'https://localhost:5001/api';
+const baseURL = 'https://localhost:8081/api';
 
 function App() {
   return (
