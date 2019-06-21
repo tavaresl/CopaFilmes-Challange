@@ -1,4 +1,4 @@
-{
+﻿{
   "$schema": "http://json.schemastore.org/launchsettings.json",
   "iisSettings": {
     "windowsAuthentication": false,
@@ -20,7 +20,7 @@
     "API": {
       "commandName": "Project",
       "launchBrowser": true,
-      "launchUrl": "api/filmes",
+      "launchUrl": "api/movies",
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
