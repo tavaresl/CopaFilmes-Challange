@@ -18,7 +18,7 @@ cd Client
 npm run build
 ```
 
-no Terminal/CMD/PowerShell
+no Terminal/PowerShell.
 
 ### Rodando a aplicação
 
@@ -52,7 +52,7 @@ O código font do server (back-end) está contido na pasta `Server`.
 
 ### Build
 
-Para buildar o client da aplicação, é necessário ter o basta rodar o comando
+Para buildar o client da aplicação, basta rodar o comando
 
 ```shell
 cd Server
@@ -69,7 +69,7 @@ Para rodar a aplicação, basta rodar o comando
 dotnet bin/API.dll
 ```
 
-para rodar a aplicação num servidor local, acessível a partir da porta `5001` via `https`.
+e ela será iniciada num servidor local, acessível a partir da porta `5001` via `https`.
 
 ### Rodando a aplicação sem buildar
 
@@ -79,4 +79,4 @@ Para rodar a aplicação sem passar pelo build do pacote de produçao, basta rod
 dotnet run --project API/API.csproj
 ```
 
-no Terminal/PowerShell, e a aplicação será iniciada num servidor local de desenvolvimento, acessível a partir da porta `8081`.
+no Terminal/PowerShell, e a aplicação será iniciada num servidor local de desenvolvimento, acessível a partir da porta `8081` via https.
